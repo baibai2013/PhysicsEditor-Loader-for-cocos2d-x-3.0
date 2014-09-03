@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+    <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>1</integer>
+        </dict>
+        <key>bodies</key>
+		<dict>
+
+			<key>shizi_di</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.00000,0.00000 }</string>
+                <key>fixtures</key>
+                <array>
+
+				</array>
+			</dict>
+
+			<key>shizi_shenzi</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.50000,0.50000 }</string>
+                <key>fixtures</key>
+                <array>
+
+					<dict>
+                        <key>mass</key>
+                        <real>2</real>
+                        <key>elasticity</key>
+                        <real>0</real>
+                        <key>friction</key>
+                        <real>0</real>
+                        <key>surface_velocity</key>
+                        <string>{ 0.00000,0.00000 }</string>
+                        <key>layers</key>
+                        <integer>0</integer>
+                        <key>group</key>
+                        <integer>0</integer>
+                        <key>collision_type</key>
+                        <integer>0</integer>
+                        <key>isSensor</key>
+                        <false/>
+                        <key>fixture_type</key>
+                        <string>POLYGON</string>
+                        
+						<key>polygons</key>
+						<array>
+							<array>	
+								<string>{ -130.50000,-154.00000 }</string>	
+								<string>{ -120.50000,46.00000 }</string>	
+								<string>{ -67.50000,102.00000 }</string>	
+								<string>{ 10.00000,78.50000 }</string>	
+								<string>{ -33.00000,-108.50000 }</string>	
+								<string>{ -63.00000,-178.50000 }</string>
+							</array>
+							<array>	
+								<string>{ 109.50000,71.00000 }</string>	
+								<string>{ 10.00000,78.50000 }</string>	
+								<string>{ 117.50000,147.00000 }</string>
+							</array>
+							<array>	
+								<string>{ 25.00000,-99.50000 }</string>	
+								<string>{ 10.00000,78.50000 }</string>	
+								<string>{ 109.50000,71.00000 }</string>	
+								<string>{ 138.50000,18.00000 }</string>	
+								<string>{ 110.50000,-177.00000 }</string>	
+								<string>{ 51.50000,-175.00000 }</string>
+							</array>
+							<array>	
+								<string>{ -33.00000,-108.50000 }</string>	
+								<string>{ 10.00000,78.50000 }</string>	
+								<string>{ 25.00000,-99.50000 }</string>
+							</array>
+							<array>	
+								<string>{ -67.50000,102.00000 }</string>	
+								<string>{ -55.00000,172.50000 }</string>	
+								<string>{ -54.00000,172.50000 }</string>	
+								<string>{ 10.00000,78.50000 }</string>
+							</array>
+						</array>
+                        
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>shizi_tou</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.50000,0.50000 }</string>
+                <key>fixtures</key>
+                <array>
+
+					<dict>
+                        <key>mass</key>
+                        <real>2</real>
+                        <key>elasticity</key>
+                        <real>0</real>
+                        <key>friction</key>
+                        <real>0</real>
+                        <key>surface_velocity</key>
+                        <string>{ 0.00000,0.00000 }</string>
+                        <key>layers</key>
+                        <integer>0</integer>
+                        <key>group</key>
+                        <integer>0</integer>
+                        <key>collision_type</key>
+                        <integer>0</integer>
+                        <key>isSensor</key>
+                        <false/>
+                        <key>fixture_type</key>
+                        <string>CIRCLE</string>
+                        
+                        <key>circle</key>
+                        <dict>
+                            <key>radius</key> 
+                            <real>266.000</real>
+                            <key>position</key> 
+                            <string>{ -2.500,-1.000 }</string>
+                        </dict>
+                        
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>shizi_youshou</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.50000,0.50000 }</string>
+                <key>fixtures</key>
+                <array>
+
+					<dict>
+                        <key>mass</key>
+                        <real>2</real>
+                        <key>elasticity</key>
+                        <real>0</real>
+                        <key>friction</key>
+                        <real>0</real>
+                        <key>surface_velocity</key>
+                        <string>{ 0.00000,0.00000 }</string>
+                        <key>layers</key>
+                        <integer>0</integer>
+                        <key>group</key>
+                        <integer>0</integer>
+                        <key>collision_type</key>
+                        <integer>0</integer>
+                        <key>isSensor</key>
+                        <false/>
+                        <key>fixture_type</key>
+                        <string>POLYGON</string>
+                        
+						<key>polygons</key>
+						<array>
+							<array>	
+								<string>{ -41.00000,-28.50000 }</string>	
+								<string>{ -58.00000,69.50000 }</string>	
+								<string>{ 36.00000,25.50000 }</string>	
+								<string>{ 66.50000,-75.50000 }</string>	
+								<string>{ 15.50000,-99.50000 }</string>
+							</array>
+							<array>	
+								<string>{ 36.00000,26.50000 }</string>	
+								<string>{ 36.00000,25.50000 }</string>	
+								<string>{ -58.00000,69.50000 }</string>	
+								<string>{ -23.50000,95.50000 }</string>
+							</array>
+						</array>
+                        
+					</dict>
+
+				</array>
+			</dict>
+
+			<key>shizi_zuoshou</key>
+			<dict>
+				<key>anchorpoint</key>
+                <string>{ 0.50000,0.50000 }</string>
+                <key>fixtures</key>
+                <array>
+
+					<dict>
+                        <key>mass</key>
+                        <real>2</real>
+                        <key>elasticity</key>
+                        <real>0</real>
+                        <key>friction</key>
+                        <real>0</real>
+                        <key>surface_velocity</key>
+                        <string>{ 0.00000,0.00000 }</string>
+                        <key>layers</key>
+                        <integer>0</integer>
+                        <key>group</key>
+                        <integer>0</integer>
+                        <key>collision_type</key>
+                        <integer>0</integer>
+                        <key>isSensor</key>
+                        <false/>
+                        <key>fixture_type</key>
+                        <string>POLYGON</string>
+                        
+						<key>polygons</key>
+						<array>
+							<array>	
+								<string>{ 65.00000,58.50000 }</string>	
+								<string>{ 14.00000,88.00000 }</string>	
+								<string>{ 57.00000,91.50000 }</string>
+							</array>
+							<array>	
+								<string>{ -64.50000,-48.50000 }</string>	
+								<string>{ 13.00000,88.00000 }</string>	
+								<string>{ 14.00000,88.00000 }</string>	
+								<string>{ 65.00000,58.50000 }</string>	
+								<string>{ 3.00000,-91.50000 }</string>	
+								<string>{ -48.00000,-86.50000 }</string>
+							</array>
+						</array>
+                        
+					</dict>
+
+				</array>
+			</dict>
+
+		</dict>
+	</dict>
+</plist>
+
+
+
+
