@@ -177,7 +177,7 @@ PhysicsBody *PEShapeCache::getPhysicsBodyByName(const std::string name)
     }
     return body;
 }
-bool PEShapeCache::removeBodysWithWithFile(const std::string &plist)
+bool PEShapeCache::removeBodysWithFile(const std::string &plist)
 {
     ValueMap dict = FileUtils::getInstance()->getValueMapFromFile(plist);
     CCASSERT(!dict.empty(), "Shape-file not found");
@@ -190,14 +190,18 @@ bool PEShapeCache::removeBodysWithWithFile(const std::string &plist)
     {
         std::string bodyName = iter->first;
         BodyDef *bd = bodyDefs.at(bodyName);
-        safeReleaseBodyDef(bd);
-        bodyDefs.erase(bodyName);
+        if(bd != nullptr)
+        {
+            safeReleaseBodyDef(bd);
+            bodyDefs.erase(bodyName);
+        }
+       
     }
     return true;
 }
 bool PEShapeCache::removeAllBodys()
 {
-//    CCLOG("%s"," PEShapeCache removeAllbodys");
+    CCLOG("%s"," PEShapeCache removeAllbodys");
     for (auto iter = bodyDefs.cbegin(); iter != bodyDefs.cend(); ++iter)
     {
         safeReleaseBodyDef(iter->second);

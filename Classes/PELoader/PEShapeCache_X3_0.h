@@ -51,7 +51,7 @@ class PEShapeCache : public Ref
      *
      *  @return 是否移除完成
      */
-    bool removeBodysWithWithFile(const std::string &plist);
+    bool removeBodysWithFile(const std::string &plist);
     /**
      *  移除所有刚体
      *
