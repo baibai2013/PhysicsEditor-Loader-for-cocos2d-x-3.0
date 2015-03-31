@@ -7,7 +7,7 @@
 //
 #include "PEShapeCache_X3_0.h"
 #include "chipmunk.h"
-#include "chipmunk/CCPhysicsHelper_chipmunk.h"
+#include "physics/CCPhysicsHelper.h"
 using namespace cocos2d;
 static PEShapeCache *_instance = nullptr;
 static float area(Point *vertices, int numVertices)
@@ -78,10 +78,9 @@ void PEShapeCache::addBodysWithFile(const std::string &plist)
             fd->group = fixturedata.at("group").asInt();
             fd->collisionType = fixturedata.at("collision_type").asInt();
             fd->isSensor = fixturedata.at("isSensor").asBool();
-            std::string fixtureType = fixturedata.at("fixture_type").asString();
             float totalArea = 0.0f;
             totalMass += fd->mass;
-            if (strcmp("POLYGON", fixtureType.c_str()) == 0)
+            if (fixturedata.find("polygons") != end(fixturedata))
             {
                 const ValueVector &polygonsArray = fixturedata.at("polygons").asValueVector();
                 fd->fixtureType = SHAPE_POLYGON;
@@ -104,7 +103,7 @@ void PEShapeCache::addBodysWithFile(const std::string &plist)
                     totalArea += poly->area;
                 }
             }
-            else if (strcmp("CIRCLE", fixtureType.c_str()) == 0)
+            else if (fixturedata.find("circle") != end(fixturedata))
             {
                 fd->fixtureType = SHAPE_CIRCLE;
                 const ValueMap &circleData = fixturedata.at("circle").asValueMap();
